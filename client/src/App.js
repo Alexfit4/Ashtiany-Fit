@@ -6,8 +6,7 @@ import Home from './Components/Dashboard/Home';
 function App() {
   return (
     <div className="App">
-      <BootStrapNavBar />
-      
+      <BootStrapNavBar />      
     </div>
 
   );
