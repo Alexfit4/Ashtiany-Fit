@@ -9,9 +9,10 @@ const app = express();
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
+app.use(cors()); // ! DO NOT MOVE! Important for front end.
 app.use(express.json());
 app.use("/clients", postRoutes);
-app.use(cors()); // ! DO NOT MOVE! Important for front end.
+
 app.use(express.urlencoded({ extended: true }));
 
 app.use(function (req, res) {

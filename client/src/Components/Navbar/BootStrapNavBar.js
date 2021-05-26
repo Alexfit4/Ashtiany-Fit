@@ -14,6 +14,7 @@ import {
     useParams,
   } from "react-router-dom";
 import Home from "../Dashboard/Home";
+import Contact from "../ContactUs/Contact";
 export default function BootStrapNavBar() {
 	return (
 <div>
@@ -27,7 +28,8 @@ export default function BootStrapNavBar() {
                                     <Nav className="mr-auto">
                                     <Nav.Link href="/">Home</Nav.Link>
                                     <Nav.Link href="/reviews">Reviews</Nav.Link>
-                                    <Nav.Link href="/contact-us">About Us</Nav.Link>
+                                    <Nav.Link href="/about-us">About Us</Nav.Link>
+                                    <Nav.Link href="/contact-us">Contact Us</Nav.Link>
                                     <NavDropdown title="Dropdown" id="basic-nav-dropdown">
                                         <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
                                         <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
@@ -51,7 +53,7 @@ export default function BootStrapNavBar() {
                                     <Reviews/>
                                 </Route>
                                 <Route path="/contact-us">
-                                   
+                                   <Contact />
                                 </Route>
                             </Switch>
                         </Router>
