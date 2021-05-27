@@ -6,7 +6,7 @@ import Button from 'react-bootstrap/Button'
 import NavDropdown from 'react-bootstrap/NavDropdown'
 import Form from 'react-bootstrap/Form'
 import FormControl from 'react-bootstrap/FormControl'
-import Reviews from "../Reviews/Reviews";
+import Testimonial from "../Testimonials/Testimonial";
 import {
     BrowserRouter as Router,
     Switch,
@@ -27,7 +27,7 @@ export default function BootStrapNavBar() {
                                 <Navbar.Collapse id="basic-navbar-nav">
                                     <Nav className="mr-auto">
                                     <Nav.Link href="/">Home</Nav.Link>
-                                    <Nav.Link href="/reviews">Reviews</Nav.Link>
+                                    <Nav.Link href="/testimonial">Testimonial</Nav.Link>
                                     <Nav.Link href="/about-us">About Us</Nav.Link>
                                     <Nav.Link href="/contact-us">Contact Us</Nav.Link>
                                     <NavDropdown title="Dropdown" id="basic-nav-dropdown">
@@ -49,8 +49,8 @@ export default function BootStrapNavBar() {
                                 <Route exact path="/">
                                    <Home/>
                                 </Route>
-                                <Route path="/reviews">
-                                    <Reviews/>
+                                <Route path="/testimonial">
+                                    <Testimonial/>
                                 </Route>
                                 <Route path="/contact-us">
                                    <Contact />

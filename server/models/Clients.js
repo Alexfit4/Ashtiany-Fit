@@ -1,9 +1,18 @@
 import mongoose from "mongoose";
 
 const clientSchema = mongoose.Schema({
-    firstName: String,
-	lastName: String,
-	email: String,
+    firstName: {
+		type: String,
+	},
+	lastName: {
+		type: String,
+	},
+	email: {
+		type: String,
+	},
+	review: {
+		type: String
+	}
 });
 
 const ClientSchema = mongoose.model('ClientSchema', clientSchema)
